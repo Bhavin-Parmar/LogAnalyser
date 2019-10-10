@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <br/>
+  LogData
+  <br/>
+  <table border="1">
+    <tr>
+        <th>clientId</th>
+        <th>UserId</th>
+        <th>PointBalance</th>
+    </tr>
+    <tr *ngFor="let log of logData">
+      <td>{{log.clientId}}</td>
+      <td>{{log.UserId}}</td>
+      <td>{{log.CurrentPointBalance}}</td>
+    </tr>
+  </table>
+
+</div>
+
+
+<router-outlet></router-outlet>
